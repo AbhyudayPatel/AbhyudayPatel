@@ -1,5 +1,5 @@
 # Hii, this is Abhyuday...
-🔭 I’m currently working on Multimodal Agents<br>👯 I’m looking to collaborate on Agents, Deep learning, Computer vision projects<br>🤝 I’m looking for help with MLOps and product development<br>🌱 I’m currently learning NLP and System design<br>🎯 1-Year Goal – Advancing expertise in Audio and Video generation<br>🚀 Long-Term Vision – Bridging multimodal intelligence with real-world impact especially in healthcare
+🔭 I’m currently working on Multimodal Agents<br>👯 I’m looking to collaborate on Agents, Deep learning, Computer vision projects<br>🤝 I’m looking for help with MLOps and product development<br>🎯 1-Year Goal – Advancing expertise in Audio and Video generation<br>🚀 Long-Term Vision – Bridging multimodal intelligence with real-world impact especially in healthcare
 
 
 ## 🌐 Socials:
@@ -15,13 +15,8 @@
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=AbhyudayPatel&theme=dark&no-frame=false&no-bg=false&margin-w=4)
 
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
-
 ### 🔝 Top Contributed Repo
 ![](https://github-contributor-stats.vercel.app/api?username=AbhyudayPatel&limit=5&theme=dark&combine_all_yearly_contributions=true)
 
 ---
 [![](https://visitcount.itsvg.in/api?id=AbhyudayPatel&icon=0&color=0)](https://visitcount.itsvg.in)
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
