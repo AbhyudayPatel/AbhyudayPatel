@@ -1,4 +1,4 @@
-# Hii, this is Abhyuday... (^_^) 😊
+# Hii, this is Abhyuday... (^_^)
 🔭 I’m currently working on Multimodal Agents<br>👯 I’m looking to collaborate on Agents, NLP, Deep learning, Computer vision projects<br>🤝 I’m looking for help with MLOps and product development<br>🎯 1-Year Goal – Advancing expertise in Audio and Video generation<br>🚀 Long-Term Vision – Bridging multimodal intelligence with real-world impact especially in healthcare
 
 
