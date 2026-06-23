@@ -1,10 +1,7 @@
 ![](https://komarev.com/ghpvc/?username=AbhyudayPatel)<br/>
 # Hii, this is Abhyuday... (^_^)
 
-🔭 Building real-world Multimodal AI Agents<br>
-👯 Working across Agents, NLP, CV, LLM and full-stack systems<br> 
-🤝 Open to teams needing end-to-end `Product → Deployment` ownership<br> 
-🛠 Interested in MLOps and scalable infra<br>
+🛠 Interested in llm inferencing<br>
 🎯 Next 1 Year - Audio & Video generation mastery<br>
 🚀 Vision - Deploying multimodal intelligence into `Enterprise` Workflows
 
