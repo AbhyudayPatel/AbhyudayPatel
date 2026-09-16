@@ -35,12 +35,3 @@ jobs:
           plugin_languages_colors: github
           plugin_languages_threshold: 0%
           plugin_languages_limit: 8
-          # Lines of code written
-          plugin_lines: yes
-          plugin_lines_sections: base
-          plugin_lines_history_days: 1
-          # Recent activity feed
-          plugin_activity: yes
-          plugin_activity_days: 14
-          plugin_activity_limit: 5
-          plugin_activity_filter: all
