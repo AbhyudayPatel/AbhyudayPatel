@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="370" viewBox="0 0 1200 370" role="img" aria-labelledby="title description">
+  <title id="title">Abhyuday Patel — LLM inference, backend, and deployment engineering</title>
+  <desc id="description">A dark blue engineering dashboard with three connected areas: LLM inference, backend systems, and production deployment.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#081421"/>
+      <stop offset="1" stop-color="#102d43"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#57c4ff"/>
+      <stop offset="1" stop-color="#74e2bd"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#79b5d7" stroke-opacity="0.07"/>
+    </pattern>
+    <clipPath id="frame">
+      <rect x="1" y="1" width="1198" height="368" rx="22"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="370" fill="url(#background)"/>
+    <rect width="1200" height="370" fill="url(#grid)"/>
+    <circle cx="1158" cy="-34" r="206" fill="none" stroke="#57c4ff" stroke-opacity="0.12"/>
+    <circle cx="1158" cy="-34" r="164" fill="none" stroke="#57c4ff" stroke-opacity="0.09"/>
+    <circle cx="26" cy="396" r="174" fill="none" stroke="#74e2bd" stroke-opacity="0.10"/>
+    <path d="M60 72H1140" stroke="#29465d"/>
+
+    <g font-family="Arial, Helvetica, sans-serif">
+      <text x="60" y="45" fill="#9dbbd0" font-size="12" font-weight="700" letter-spacing="2">ENGINEERING / THE WHOLE SYSTEM</text>
+      <circle cx="1015" cy="41" r="4" fill="#57c4ff"/>
+      <circle cx="1031" cy="41" r="4" fill="#a9a1ff"/>
+      <circle cx="1047" cy="41" r="4" fill="#74e2bd"/>
+      <text x="1140" y="45" text-anchor="end" fill="#9dbbd0" font-size="11" letter-spacing="1.2">BUILD / SHIP</text>
+
+      <text x="600" y="133" text-anchor="middle" fill="#f3f8fc" font-size="50" font-weight="700" letter-spacing="-1">Abhyuday Patel</text>
+      <text x="600" y="173" text-anchor="middle" fill="#8ed5ff" font-size="20" letter-spacing="1">LLM INFERENCE · BACKEND SYSTEMS · DEPLOYMENT</text>
+      <text x="600" y="207" text-anchor="middle" fill="#c1d0dc" font-size="17">From model execution to production systems.</text>
+
+      <rect x="60" y="248" width="344" height="78" rx="12" fill="#0d2032" stroke="#2b4e67"/>
+      <rect x="428" y="248" width="344" height="78" rx="12" fill="#0d2032" stroke="#2b4e67"/>
+      <rect x="796" y="248" width="344" height="78" rx="12" fill="#0d2032" stroke="#2b4e67"/>
+
+      <path d="M404 287H428M422 282L428 287L422 292" fill="none" stroke="#679cb8" stroke-width="1.5"/>
+      <path d="M772 287H796M790 282L796 287L790 292" fill="none" stroke="#679cb8" stroke-width="1.5"/>
+
+      <text x="82" y="275" fill="#57c4ff" font-size="11" font-weight="700" letter-spacing="1.8">01 / INFERENCE</text>
+      <text x="82" y="302" fill="#e1edf5" font-size="18">Serving · Routing · Evaluation</text>
+
+      <text x="450" y="275" fill="#b8b1ff" font-size="11" font-weight="700" letter-spacing="1.8">02 / BACKEND</text>
+      <text x="450" y="302" fill="#e1edf5" font-size="18">APIs · Graphs · Data</text>
+
+      <text x="818" y="275" fill="#74e2bd" font-size="11" font-weight="700" letter-spacing="1.8">03 / PRODUCTION</text>
+      <text x="818" y="302" fill="#e1edf5" font-size="18">Containers · Cloud · Observability</text>
+    </g>
+
+    <rect x="60" y="350" width="1080" height="2" rx="1" fill="url(#accent)" opacity="0.8"/>
+  </g>
+  <rect x="1" y="1" width="1198" height="368" rx="22" fill="none" stroke="#2b4e67"/>
+</svg>
