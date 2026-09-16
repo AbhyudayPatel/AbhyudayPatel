@@ -1,12 +1,12 @@
 <div align="center">
-  <img src="./assets/pipeline-banner.svg" width="100%" alt="Abhyuday Patel — tokens flowing from LLM inference to production deployment" />
+  <img src="./assets/pipeline-banner.svg?v=2" width="100%" alt="Abhyuday Patel — annotated blueprint of an LLM inference engine" />
 
   <p>
     <a href="https://www.linkedin.com/in/abhyudaypatel/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square" alt="LinkedIn" /></a>
     <a href="mailto:ai.abhyuday@gmail.com"><img src="https://img.shields.io/badge/Email-0E5484?style=flat-square" alt="Email Abhyuday" /></a>
-    <a href="https://x.com/abhyuday_patel"><img src="https://img.shields.io/badge/X-111827?style=flat-square&amp;logo=x&amp;logoColor=white" alt="X" /></a>
+    <a href="https://x.com/ogabhyuday"><img src="https://img.shields.io/badge/X-111827?style=flat-square&amp;logo=x&amp;logoColor=white" alt="X" /></a>
     <a href="https://medium.com/@patelabhyuday09"><img src="https://img.shields.io/badge/Medium-111827?style=flat-square&amp;logo=medium&amp;logoColor=white" alt="Medium" /></a>
-    <img src="https://komarev.com/ghpvc/?username=AbhyudayPatel&amp;style=flat-square&amp;color=0E5484" alt="Profile views" />
+    <img src="https://komarev.com/ghpvc/?username=AbhyudayPatel&amp;style=flat-square&amp;color=E8542F" alt="Profile views" />
   </p>
 
   <p>
@@ -25,7 +25,7 @@
 | ▸ **NOW** | **[Orbitrage](https://orbitrage.ai)** — Co-Founder & CTO · LLM routing, observability & evaluation · Localhost HQ Founders Program |
 | ▸ **PREV** | **[Timeln](https://timeln.app)** — first engineering hire · Memgraph → FalkorDB migration · **[Procurv](https://www.procurvhq.com)** — co-founder |
 | ▸ **FOCUS** | vLLM/SGLang serving · model routing · KV caching · batching · agent backends · deployment |
-| ▸ **BASE** | Bengaluru, India · IIIT Ranchi, ECE — Class of 2027 |
+| ▸ **EDU** | IIIT Ranchi — Electronics & Communication Engineering · Class of 2027 |
 
 ## 🚀 Featured builds
 
@@ -35,9 +35,12 @@
 
 <h3>🪐 <a href="https://orbitrage.ai">Orbitrage</a></h3>
 <p>Routing, observability &amp; evaluation for production LLM apps. I build the gateway, backend, and deploys.</p>
-<p><strong>500+ users · 5B+ tokens/mo</strong></p>
-<p><code>Routing</code> <code>Evals</code> <code>Azure</code></p>
-<p><a href="https://orbitrage.ai"><strong>Product ↗</strong></a> · <a href="https://docs.orbitrage.ai">Docs</a></p>
+<p><strong>500+ users · 5B+ tokens/mo</strong> · one-line SDK integration</p>
+<p>
+<a href="https://www.npmjs.com/package/orbitrage"><img src="https://img.shields.io/npm/v/orbitrage?style=flat-square&amp;label=npm" alt="npm orbitrage" /></a>
+<a href="https://pypi.org/project/orbitrage/"><img src="https://img.shields.io/pypi/v/orbitrage?style=flat-square&amp;label=pypi" alt="PyPI orbitrage" /></a>
+</p>
+<p><a href="https://orbitrage.ai"><strong>Product ↗</strong></a> · <a href="https://docs.orbitrage.ai">Docs</a> · <a href="https://www.npmjs.com/package/orbitrage">npm</a> · <a href="https://pypi.org/project/orbitrage/">PyPI</a></p>
 
 </td>
 <td width="50%" valign="top">
@@ -83,7 +86,7 @@
 
 ## 📈 Stat sheet
 
-<img src="./assets/stat-sheet.svg" width="100%" alt="Skill meters and trophy case" />
+<img src="./assets/stat-sheet.svg?v=2" width="100%" alt="Skill meters and trophy case" />
 
 ## 🧪 Side quests
 
@@ -95,10 +98,9 @@
 | ⌨️ **[Autocomplete](https://github.com/AbhyudayPatel/Autocomplete)** | Local-model completion engine with plugins & streaming | [Code](https://github.com/AbhyudayPatel/Autocomplete) |
 | 🛡️ **[Doc Validator](https://github.com/AbhyudayPatel/Document_validator)** | Gemini extraction + deterministic validation, FastAPI | [Code](https://github.com/AbhyudayPatel/Document_validator) |
 
-<details>
-<summary><strong>🗃️ Archive — earlier builds, tools & forks</strong></summary>
+## 🗃️ Archive
 
-<br />
+**Earlier builds, tools & learning — the trail that got me here.**
 
 | Repository | What it is |
 | :--- | :--- |
@@ -120,8 +122,6 @@
 [Build Your Own X](https://github.com/AbhyudayPatel/build-your-own-x) ·
 [Agentic News](https://github.com/AbhyudayPatel/Agentic_News) ·
 [Food Distribution](https://github.com/AbhyudayPatel/Food-distribution-Service)
-
-</details>
 
 ## 🎒 Loadout
 

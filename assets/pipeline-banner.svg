@@ -1,148 +1,219 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title description">
-  <title id="title">Abhyuday Patel — LLM inference pipeline to production</title>
-  <desc id="description">Animated HUD showing tokens flowing through LLM inference stages — tokenize, prefill, KV cache, decode, route — into deployment.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title description">
+  <title id="title">Abhyuday Patel — systems blueprint, fig 1.0: the serving loop</title>
+  <desc id="description">A wireframe blueprint of an LLM inference engine with annotated internals — tokenizer, embeddings, transformer layers, paged KV cache, sampler — beside connected gateway, router, and deployment services.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#091322"/>
-      <stop offset="1" stop-color="#0f2c42"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#57c4ff"/>
-      <stop offset="1" stop-color="#74e2bd"/>
-    </linearGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M40 0H0V40" fill="none" stroke="#79b5d7" stroke-opacity="0.06"/>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#E8542F" stroke-opacity="0.07"/>
     </pattern>
-    <clipPath id="frame"><rect x="1" y="1" width="1198" height="428" rx="22"/></clipPath>
   </defs>
 
-  <g clip-path="url(#frame)" font-family="Arial, Helvetica, sans-serif">
-    <rect width="1200" height="430" fill="url(#bg)"/>
-    <rect width="1200" height="430" fill="url(#grid)"/>
-    <circle cx="1160" cy="-30" r="200" fill="none" stroke="#57c4ff" stroke-opacity="0.10"/>
-    <circle cx="20" cy="460" r="170" fill="none" stroke="#74e2bd" stroke-opacity="0.08"/>
+  <rect width="1200" height="620" fill="#FAF4EA"/>
+  <rect width="1200" height="620" fill="url(#grid)"/>
+  <rect x="10" y="10" width="1180" height="600" fill="none" stroke="#E8542F"/>
 
-    <!-- scanline -->
-    <rect y="66" width="2" height="300" fill="#57c4ff" opacity="0.05">
-      <animate attributeName="x" values="40;1160" dur="7s" repeatCount="indefinite"/>
-    </rect>
-
-    <!-- header -->
-    <text x="48" y="37" fill="#8fb6cf" font-size="12" font-weight="700" letter-spacing="2">&#9672; PLAYER // ABHYUDAY PATEL</text>
-    <circle cx="1058" cy="33" r="4" fill="#57c4ff"/>
-    <circle cx="1074" cy="33" r="4" fill="#a9a1ff"/>
-    <circle cx="1090" cy="33" r="4" fill="#74e2bd"/>
-    <circle cx="1120" cy="33" r="4" fill="#4ade80">
-      <animate attributeName="opacity" values="1;0.15;1" dur="1.6s" repeatCount="indefinite"/>
-    </circle>
-    <text x="1134" y="37" fill="#4ade80" font-size="11" font-weight="700" letter-spacing="2">LIVE</text>
-    <path d="M48 58H1152" stroke="#29465d"/>
-
-    <!-- title -->
-    <text x="56" y="148" fill="#f2f7fb" font-size="50" font-weight="700" letter-spacing="-1">Abhyuday Patel</text>
-    <text x="56" y="186" fill="#7fd0ff" font-size="18" letter-spacing="1.5">LLM INFERENCE &#183; BACKEND SYSTEMS &#183; DEPLOYMENT</text>
-    <text x="56" y="212" fill="#b9c9d6" font-size="14.5">From model execution to production systems.</text>
-
-    <!-- player HUD -->
-    <rect x="700" y="88" width="444" height="140" rx="12" fill="#0d2033" stroke="#2b4e67"/>
-    <circle cx="722" cy="113" r="3.5" fill="#57c4ff"/>
-    <text x="738" y="117" fill="#6f94ad" font-size="10" letter-spacing="1.6">CLASS</text>
-    <text x="822" y="117" fill="#e1edf5" font-size="13" font-weight="700">AI SYSTEMS ENGINEER</text>
-    <circle cx="722" cy="139" r="3.5" fill="#a9a1ff"/>
-    <text x="738" y="143" fill="#6f94ad" font-size="10" letter-spacing="1.6">GUILD</text>
-    <text x="822" y="143" fill="#e1edf5" font-size="13" font-weight="700">LOCALHOST HQ FOUNDERS</text>
-    <circle cx="722" cy="165" r="3.5" fill="#74e2bd"/>
-    <text x="738" y="169" fill="#6f94ad" font-size="10" letter-spacing="1.6">BASE</text>
-    <text x="822" y="169" fill="#e1edf5" font-size="13" font-weight="700">BENGALURU &#183; INDIA</text>
-    <text x="738" y="203" fill="#6f94ad" font-size="10" letter-spacing="1.6">PRODUCTION XP</text>
-    <rect x="858" y="194" width="212" height="10" rx="5" fill="#16314a"/>
-    <rect x="858" y="194" height="10" rx="5" fill="url(#accent)" width="0">
-      <animate attributeName="width" values="0;186" dur="1.6s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
-    </rect>
-    <text x="1128" y="203" text-anchor="end" fill="#7fd0ff" font-size="10" font-weight="700">2+ YRS</text>
-
-    <!-- pipeline label -->
-    <text x="56" y="258" fill="#6f94ad" font-size="11" font-weight="700" letter-spacing="2">INFERENCE &#9656; PRODUCTION PIPELINE</text>
-    <text x="1144" y="258" text-anchor="end" fill="#6f94ad" font-size="11" letter-spacing="1.5">tokens &#9656;&#9656;&#9656;</text>
-
-    <!-- connectors with animated flow -->
-    <g stroke="#3d6a8a" stroke-width="2" stroke-dasharray="7 9">
-      <line x1="143" y1="316" x2="293" y2="316"><animate attributeName="stroke-dashoffset" values="16;0" dur="0.8s" repeatCount="indefinite"/></line>
-      <line x1="339" y1="316" x2="489" y2="316"><animate attributeName="stroke-dashoffset" values="16;0" dur="0.8s" repeatCount="indefinite"/></line>
-      <line x1="535" y1="316" x2="685" y2="316"><animate attributeName="stroke-dashoffset" values="16;0" dur="0.8s" repeatCount="indefinite"/></line>
-      <line x1="731" y1="316" x2="881" y2="316"><animate attributeName="stroke-dashoffset" values="16;0" dur="0.8s" repeatCount="indefinite"/></line>
-      <line x1="927" y1="316" x2="1077" y2="316"><animate attributeName="stroke-dashoffset" values="16;0" dur="0.8s" repeatCount="indefinite"/></line>
-    </g>
-
-    <!-- stage nodes -->
-    <g font-weight="700" text-anchor="middle">
-      <circle cx="120" cy="316" r="23" fill="#0d2033" stroke="#57c4ff" stroke-width="1.5"/>
-      <text x="120" y="321" fill="#57c4ff" font-size="13">TK</text>
-      <circle cx="316" cy="316" r="23" fill="#0d2033" stroke="#6ea8fe" stroke-width="1.5"/>
-      <text x="316" y="321" fill="#6ea8fe" font-size="13">PF</text>
-      <circle cx="512" cy="316" r="23" fill="#0d2033" stroke="#a9a1ff" stroke-width="1.5"/>
-      <text x="512" y="321" fill="#a9a1ff" font-size="13">KV</text>
-      <circle cx="708" cy="316" r="23" fill="#0d2033" stroke="#74e2bd" stroke-width="1.5"/>
-      <text x="708" y="321" fill="#74e2bd" font-size="13">DC</text>
-      <circle cx="904" cy="316" r="23" fill="#0d2033" stroke="#ffd166" stroke-width="1.5"/>
-      <text x="904" y="321" fill="#ffd166" font-size="13">RT</text>
-      <circle cx="1100" cy="316" r="23" fill="#0d2033" stroke="#4ade80" stroke-width="1.5"/>
-      <text x="1100" y="321" fill="#4ade80" font-size="13">DP</text>
-    </g>
-
-    <!-- stage labels -->
-    <g text-anchor="middle">
-      <text x="120" y="358" fill="#c7d6e2" font-size="12" font-weight="600">TOKENIZE</text>
-      <text x="120" y="374" fill="#6f94ad" font-size="9.5">byte-level bpe</text>
-      <text x="316" y="358" fill="#c7d6e2" font-size="12" font-weight="600">PREFILL</text>
-      <text x="316" y="374" fill="#6f94ad" font-size="9.5">attention</text>
-      <text x="512" y="358" fill="#c7d6e2" font-size="12" font-weight="600">KV CACHE</text>
-      <text x="512" y="374" fill="#6f94ad" font-size="9.5">paged blocks</text>
-      <text x="708" y="358" fill="#c7d6e2" font-size="12" font-weight="600">DECODE</text>
-      <text x="708" y="374" fill="#6f94ad" font-size="9.5">token streams</text>
-      <text x="904" y="358" fill="#c7d6e2" font-size="12" font-weight="600">ROUTE</text>
-      <text x="904" y="374" fill="#6f94ad" font-size="9.5">fallbacks on</text>
-      <text x="1100" y="358" fill="#c7d6e2" font-size="12" font-weight="600">DEPLOY</text>
-      <text x="1100" y="374" fill="#6f94ad" font-size="9.5">containers</text>
-    </g>
-
-    <!-- deploy containers spawning -->
-    <g fill="none" stroke="#4ade80" stroke-width="1.2" opacity="0.85">
-      <rect x="1076" y="280" width="15" height="11" rx="2">
-        <animate attributeName="opacity" values="0.15;1;0.15" dur="2.4s" begin="0s" repeatCount="indefinite"/>
-      </rect>
-      <rect x="1097" y="280" width="15" height="11" rx="2">
-        <animate attributeName="opacity" values="0.15;1;0.15" dur="2.4s" begin="0.8s" repeatCount="indefinite"/>
-      </rect>
-      <rect x="1118" y="280" width="15" height="11" rx="2">
-        <animate attributeName="opacity" values="0.15;1;0.15" dur="2.4s" begin="1.6s" repeatCount="indefinite"/>
-      </rect>
-    </g>
-
-    <!-- flowing tokens -->
+  <g stroke="#E8542F" fill="none">
+    <!-- ============ LEFT: INFERENCE ENGINE WIREFRAME ============ -->
+    <rect x="170" y="92" width="180" height="390" rx="22" stroke-width="1.5"/>
+    <line x1="170" y1="126" x2="350" y2="126"/>
+    <!-- tokenizer -->
+    <rect x="186" y="138" width="148" height="52" rx="8"/>
+    <rect x="194" y="150" width="40" height="16" rx="4"/>
+    <rect x="240" y="150" width="40" height="16" rx="4"/>
+    <rect x="286" y="150" width="40" height="16" rx="4"/>
+    <!-- embed -->
     <g>
-      <circle r="4.5" fill="#eaf6ff" stroke="#57c4ff" stroke-width="1.2">
-        <animateMotion dur="5.2s" repeatCount="indefinite" path="M 120 316 H 1080"/>
-      </circle>
-      <circle r="4.5" fill="#eaf6ff" stroke="#74e2bd" stroke-width="1.2">
-        <animateMotion dur="5.2s" begin="-1.04s" repeatCount="indefinite" path="M 120 316 H 1080"/>
-      </circle>
-      <circle r="4.5" fill="#eaf6ff" stroke="#a9a1ff" stroke-width="1.2">
-        <animateMotion dur="5.2s" begin="-2.08s" repeatCount="indefinite" path="M 120 316 H 1080"/>
-      </circle>
-      <circle r="4.5" fill="#eaf6ff" stroke="#57c4ff" stroke-width="1.2">
-        <animateMotion dur="5.2s" begin="-3.12s" repeatCount="indefinite" path="M 120 316 H 1080"/>
-      </circle>
-      <circle r="4.5" fill="#eaf6ff" stroke="#ffd166" stroke-width="1.2">
-        <animateMotion dur="5.2s" begin="-4.16s" repeatCount="indefinite" path="M 120 316 H 1080"/>
-      </circle>
+      <rect x="194" y="208" width="12" height="12"/><rect x="211" y="208" width="12" height="12"/>
+      <rect x="228" y="208" width="12" height="12"/><rect x="245" y="208" width="12" height="12"/>
+      <rect x="262" y="208" width="12" height="12"/><rect x="279" y="208" width="12" height="12"/>
+      <rect x="296" y="208" width="12" height="12"/><rect x="313" y="208" width="12" height="12"/>
     </g>
+    <!-- layers -->
+    <rect x="186" y="246" width="148" height="24" rx="6"/>
+    <rect x="186" y="278" width="148" height="24" rx="6"/>
+    <rect x="186" y="310" width="148" height="24" rx="6"/>
+    <!-- paged KV cache -->
+    <g>
+      <rect x="186" y="352" width="16" height="12"><animate attributeName="fill" values="#E8542F" dur="6s" repeatCount="indefinite"/><animate attributeName="fill-opacity" values="0;0.85;0.85;0" keyTimes="0;0.08;0.9;1" dur="6s" repeatCount="indefinite"/></rect>
+      <rect x="211" y="352" width="16" height="12" fill="#E8542F" fill-opacity="0"><animate attributeName="fill-opacity" values="0;0.85;0.85;0" keyTimes="0;0.08;0.9;1" begin="0.35s" dur="6s" repeatCount="indefinite"/></rect>
+      <rect x="236" y="352" width="16" height="12" fill="#E8542F" fill-opacity="0"><animate attributeName="fill-opacity" values="0;0.85;0.85;0" keyTimes="0;0.08;0.9;1" begin="0.7s" dur="6s" repeatCount="indefinite"/></rect>
+      <rect x="261" y="352" width="16" height="12" fill="#E8542F" fill-opacity="0"><animate attributeName="fill-opacity" values="0;0.85;0.85;0" keyTimes="0;0.08;0.9;1" begin="1.05s" dur="6s" repeatCount="indefinite"/></rect>
+      <rect x="286" y="352" width="16" height="12" fill="#E8542F" fill-opacity="0"><animate attributeName="fill-opacity" values="0;0.85;0.85;0" keyTimes="0;0.08;0.9;1" begin="1.4s" dur="6s" repeatCount="indefinite"/></rect>
+      <rect x="311" y="352" width="16" height="12" fill="#E8542F" fill-opacity="0"><animate attributeName="fill-opacity" values="0;0.85;0.85;0" keyTimes="0;0.08;0.9;1" begin="1.75s" dur="6s" repeatCount="indefinite"/></rect>
+      <rect x="186" y="370" width="16" height="12" fill="#E8542F" fill-opacity="0"><animate attributeName="fill-opacity" values="0;0.85;0.85;0" keyTimes="0;0.08;0.9;1" begin="2.1s" dur="6s" repeatCount="indefinite"/></rect>
+      <rect x="211" y="370" width="16" height="12" fill="#E8542F" fill-opacity="0"><animate attributeName="fill-opacity" values="0;0.85;0.85;0" keyTimes="0;0.08;0.9;1" begin="2.45s" dur="6s" repeatCount="indefinite"/></rect>
+      <rect x="236" y="370" width="16" height="12"/>
+      <rect x="261" y="370" width="16" height="12"/>
+      <rect x="286" y="370" width="16" height="12"/>
+      <rect x="311" y="370" width="16" height="12"/>
+    </g>
+    <!-- sampler + output -->
+    <rect x="186" y="452" width="148" height="22" rx="6"/>
+    <!-- token gliding down the engine -->
+    <circle cx="254" cy="164" r="4" fill="#E8542F" stroke="none">
+      <animate attributeName="cy" values="164;164;460;460" keyTimes="0;0.06;0.82;1" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.06;0.82;0.9" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <!-- annotation callouts -->
+    <g stroke-dasharray="4 4">
+      <line x1="158" y1="164" x2="182" y2="164"/>
+      <line x1="158" y1="218" x2="182" y2="218"/>
+      <line x1="158" y1="290" x2="182" y2="290"/>
+      <line x1="158" y1="376" x2="182" y2="376"/>
+      <line x1="158" y1="436" x2="182" y2="436"/>
+    </g>
+    <g>
+      <circle cx="183" cy="164" r="3"/>
+      <circle cx="183" cy="218" r="3"/>
+      <circle cx="183" cy="290" r="3"/>
+      <circle cx="183" cy="376" r="3"/>
+      <circle cx="183" cy="436" r="3"/>
+    </g>
+    <!-- dimension marker -->
+    <line x1="368" y1="92" x2="368" y2="482"/>
+    <line x1="362" y1="92" x2="374" y2="92"/>
+    <line x1="362" y1="482" x2="374" y2="482"/>
 
-    <!-- quest log -->
-    <rect x="0" y="398" width="1200" height="32" fill="#0b1a2a"/>
-    <text x="56" y="419" fill="#9dbbd0" font-size="11.5" letter-spacing="0.5">QUESTS &#9656;  <tspan fill="#74e2bd">&#10003;</tspan> 5B+ TOKENS/MO @ ORBITRAGE    <tspan fill="#74e2bd">&#10003;</tspan> MEMGRAPH &#8594; FALKORDB @ TIMELN    <tspan fill="#74e2bd">&#10003;</tspan> DUOTALK ON PYPI    <tspan fill="#ffd166">&#9654;</tspan> NEXT: AUDIO + VIDEO GENERATION</text>
+    <!-- ============ CENTER: DISPLAY TYPE ============ -->
+    <g stroke-width="5" stroke-linecap="round">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="0 430 168;360 430 168" dur="24s" repeatCount="indefinite"/>
+        <line x1="430" y1="142" x2="430" y2="194"/>
+        <line x1="456" y1="168" x2="404" y2="168"/>
+        <line x1="448" y1="150" x2="412" y2="186"/>
+        <line x1="412" y1="150" x2="448" y2="186"/>
+        <line x1="444" y1="146" x2="416" y2="190"/>
+        <line x1="416" y1="146" x2="444" y2="190"/>
+        <line x1="430" y1="142" x2="430" y2="194" transform="rotate(22.5 430 168)"/>
+        <line x1="456" y1="168" x2="404" y2="168" transform="rotate(22.5 430 168)"/>
+      </g>
+    </g>
+    <line x1="486" y1="330" x2="800" y2="330"/>
 
-    <rect x="56" y="424" width="1088" height="2" rx="1" fill="url(#accent)" opacity="0.8"/>
+    <!-- ============ RIGHT: CONNECTED SERVICES ============ -->
+    <line x1="900" y1="84" x2="1100" y2="84"/>
+    <rect x="868" y="100" width="94" height="196" rx="14" stroke-width="1.5"/>
+    <circle cx="891" cy="126" r="6"/>
+    <line x1="891" y1="132" x2="891" y2="142"/>
+    <rect x="878" y="256" width="74" height="14" rx="7"/>
+    <rect x="974" y="100" width="94" height="196" rx="14" stroke-width="1.5"/>
+    <rect x="986" y="130" width="70" height="20" rx="5" fill="#E8542F" fill-opacity="0.05"><animate attributeName="fill-opacity" values="0.05;0.22;0.05" dur="3s" repeatCount="indefinite"/></rect>
+    <rect x="986" y="160" width="70" height="20" rx="5" fill="#E8542F" fill-opacity="0.05"><animate attributeName="fill-opacity" values="0.05;0.22;0.05" begin="1s" dur="3s" repeatCount="indefinite"/></rect>
+    <rect x="986" y="190" width="70" height="20" rx="5" fill="#E8542F" fill-opacity="0.05"><animate attributeName="fill-opacity" values="0.05;0.22;0.05" begin="2s" dur="3s" repeatCount="indefinite"/></rect>
+    <rect x="1080" y="100" width="94" height="196" rx="14" stroke-width="1.5"/>
+    <rect x="1087" y="140" width="30" height="22" rx="4"><animate attributeName="stroke-opacity" values="0.25;1;0.25" dur="2.4s" repeatCount="indefinite"/></rect>
+    <rect x="1123" y="140" width="30" height="22" rx="4"><animate attributeName="stroke-opacity" values="0.25;1;0.25" begin="0.8s" dur="2.4s" repeatCount="indefinite"/></rect>
+    <rect x="1105" y="172" width="30" height="22" rx="4"><animate attributeName="stroke-opacity" values="0.25;1;0.25" begin="1.6s" dur="2.4s" repeatCount="indefinite"/></rect>
+    <line x1="1087" y1="252" x2="1153" y2="252" stroke-dasharray="4 4"/>
+    <circle cx="1153" cy="252" r="3"/>
+
+    <!-- notes glyphs -->
+    <rect x="868" y="362" width="11" height="11"/>
+    <rect x="868" y="388" width="11" height="11" rx="3"/>
+    <line x1="868" y1="418" x2="879" y2="418" stroke-dasharray="3 3"/>
+    <circle cx="873.5" cy="442" r="5.5"/>
+
+    <!-- bottom spec table -->
+    <line x1="44" y1="506" x2="600" y2="506"/>
+    <line x1="44" y1="551" x2="600" y2="551"/>
+    <line x1="44" y1="596" x2="600" y2="596"/>
+    <line x1="322" y1="506" x2="322" y2="596"/>
+    <line x1="44" y1="506" x2="44" y2="596"/>
+    <line x1="600" y1="506" x2="600" y2="596"/>
+
+    <!-- latency dimension figure -->
+    <rect x="884" y="514" width="108" height="56" rx="10" stroke-width="1.5"/>
+    <line x1="884" y1="586" x2="992" y2="586"/>
+    <line x1="884" y1="580" x2="884" y2="592"/>
+    <line x1="992" y1="580" x2="992" y2="592"/>
+    <line x1="1004" y1="514" x2="1004" y2="570"/>
+    <line x1="998" y1="514" x2="1010" y2="514"/>
+    <line x1="998" y1="570" x2="1010" y2="570"/>
   </g>
-  <rect x="1" y="1" width="1198" height="428" rx="22" fill="none" stroke="#2b4e67"/>
+
+  <!-- ============ TEXT ============ -->
+  <g fill="#E8542F" font-family="Consolas, Menlo, 'Courier New', monospace">
+    <!-- engine labels -->
+    <text x="186" y="113" font-size="9">req #4821</text>
+    <text x="334" y="113" font-size="9" text-anchor="end">qwen3-32b</text>
+    <text x="214" y="162" font-size="9" text-anchor="middle">The</text>
+    <text x="260" y="162" font-size="9" text-anchor="middle">cat</text>
+    <text x="306" y="162" font-size="9" text-anchor="middle">sat</text>
+    <text x="194" y="258" font-size="8">attn</text>
+    <text x="326" y="258" font-size="8" text-anchor="end">mlp</text>
+    <text x="194" y="290" font-size="8">attn</text>
+    <text x="326" y="290" font-size="8" text-anchor="end">mlp</text>
+    <text x="194" y="322" font-size="8">attn</text>
+    <text x="326" y="322" font-size="8" text-anchor="end">mlp</text>
+    <text x="352" y="294" font-size="10">&#215;36</text>
+    <text x="186" y="432" font-size="9">top_p 0.95 &#183; temp 0.7</text>
+    <text x="194" y="468" font-size="10">&#9656; the mat.</text>
+    <!-- annotations -->
+    <g font-size="9.5" letter-spacing="1.5" text-anchor="end">
+      <text x="150" y="168">PROMPT / TOKENS</text>
+      <text x="150" y="222">EMBED &#183; D 5120</text>
+      <text x="150" y="294">LAYERS</text>
+      <text x="150" y="380">PAGED KV</text>
+      <text x="150" y="440">SAMPLER</text>
+    </g>
+    <text font-size="9.5" letter-spacing="1.5" transform="rotate(-90 378 287)" x="378" y="287" text-anchor="middle">128k ctx</text>
+
+    <!-- center -->
+    <text x="600" y="76" font-size="12" letter-spacing="6" text-anchor="middle">&#8212; SYSTEMS BLUEPRINT &#8212;</text>
+    <text x="486" y="372" font-size="16" letter-spacing="4">LLM INFERENCE &#215; PRODUCTION</text>
+    <text x="486" y="402" font-size="12" letter-spacing="2" opacity="0.7">backend systems &#183; deployment engineering</text>
+
+    <!-- right labels -->
+    <text x="1000" y="76" font-size="11" letter-spacing="4" text-anchor="middle">CONNECTED SERVICES</text>
+    <text x="915" y="94" font-size="9" letter-spacing="2" text-anchor="middle">GATEWAY</text>
+    <text x="1021" y="94" font-size="9" letter-spacing="2" text-anchor="middle">ROUTER</text>
+    <text x="1127" y="94" font-size="9" letter-spacing="2" text-anchor="middle">DEPLOY</text>
+    <text x="878" y="160" font-size="8.5">/v1/chat</text>
+    <text x="878" y="178" font-size="8.5">auth &#183; sha-256</text>
+    <text x="878" y="196" font-size="8.5">routing &#183; rls</text>
+    <text x="878" y="236" font-size="9" font-weight="bold">200 OK
+      <animate attributeName="opacity" values="1;0.35;1" dur="2s" repeatCount="indefinite"/>
+    </text>
+    <text x="952" y="266" font-size="8" text-anchor="end">sse</text>
+    <text x="993" y="143" font-size="8">basic</text>
+    <text x="993" y="173" font-size="8">mid</text>
+    <text x="993" y="203" font-size="8">frontier</text>
+    <text x="1056" y="230" font-size="8" text-anchor="end">cheapest &#10003;</text>
+    <text x="1094" y="236" font-size="8.5">healthy</text>
+    <text x="1094" y="252" font-size="8.5" opacity="0">&#10003;
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.2;0.8;1" dur="2.4s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- notes -->
+    <text x="868" y="346" font-size="10" letter-spacing="3">NOTES</text>
+    <text x="886" y="371" font-size="9">hairline boxes = live services</text>
+    <text x="886" y="397" font-size="9">single stroke &#183; 1.5px</text>
+    <text x="886" y="423" font-size="9">grid 36px &#183; radius 8pt</text>
+    <text x="886" y="449" font-size="9">serif display + mono annotations</text>
+
+    <!-- spec table -->
+    <g font-size="8.5" letter-spacing="2">
+      <text x="58" y="524">PROJECT</text>
+      <text x="336" y="524">FOCUS</text>
+      <text x="58" y="569">FIG</text>
+      <text x="336" y="569">STATUS</text>
+    </g>
+    <g font-size="12.5" font-weight="bold">
+      <text x="58" y="542">ABHYUDAY PATEL</text>
+      <text x="336" y="542">LLM SYSTEMS &#183; SHIPPED</text>
+      <text x="58" y="587">1.0 &#8212; SERVING LOOP</text>
+      <text x="336" y="587">SHIPPING</text>
+    </g>
+    <circle cx="424" cy="583" r="4" fill="#E8542F" stroke="none">
+      <animate attributeName="opacity" values="1;0.2;1" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="938" y="600" font-size="9" text-anchor="middle">p50 &#183; 38ms</text>
+    <text x="938" y="545" font-size="9" text-anchor="middle">req</text>
+    <text font-size="9" transform="rotate(-90 1014 542)" x="1014" y="542" text-anchor="middle">142 tok/s</text>
+  </g>
+
+  <!-- display name in serif -->
+  <g fill="#E8542F" font-family="Georgia, 'Times New Roman', serif" font-weight="700">
+    <text x="486" y="212" font-size="72">Abhyuday</text>
+    <text x="486" y="298" font-size="72">Patel</text>
+  </g>
 </svg>
