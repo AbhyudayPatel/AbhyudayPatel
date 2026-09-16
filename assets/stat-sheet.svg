@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="252" viewBox="0 0 1200 252" role="img" aria-labelledby="t d">
+  <title id="t">Abhyuday Patel — stat sheet and trophy case</title>
+  <desc id="d">Self-rated skill meters that fill on load, beside a trophy case of shipped work.</desc>
+  <defs>
+    <linearGradient id="sbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1523"/>
+      <stop offset="1" stop-color="#0f2c42"/>
+    </linearGradient>
+    <linearGradient id="fill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#57c4ff"/>
+      <stop offset="1" stop-color="#74e2bd"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="252" fill="url(#sbg)"/>
+  <rect x="1" y="1" width="1198" height="250" rx="18" fill="none" stroke="#2b4e67"/>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="48" y="42" fill="#8fb6cf" font-size="12" font-weight="700" letter-spacing="2">&#9672; STAT SHEET</text>
+    <text x="300" y="42" fill="#5b7d94" font-size="10.5">self-rated &#183; battle-tested in production</text>
+
+    <!-- skill bars -->
+    <g font-size="12" fill="#c7d6e2">
+      <text x="48" y="78">LLM INFERENCE &amp; SERVING</text>
+      <text x="48" y="114">BACKEND &amp; API DESIGN</text>
+      <text x="48" y="150">DEPLOYMENT &amp; INFRA</text>
+      <text x="48" y="186">AGENT SYSTEMS</text>
+      <text x="48" y="222">REALTIME VOICE</text>
+    </g>
+    <g>
+      <rect x="300" y="67" width="560" height="11" rx="5.5" fill="#16314a"/>
+      <rect x="300" y="67" height="11" rx="5.5" fill="url(#fill)" width="0">
+        <animate attributeName="width" values="0;532" dur="1.3s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+      </rect>
+      <rect x="300" y="103" width="560" height="11" rx="5.5" fill="#16314a"/>
+      <rect x="300" y="103" height="11" rx="5.5" fill="url(#fill)" width="0">
+        <animate attributeName="width" values="0;521" dur="1.3s" begin="0.1s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+      </rect>
+      <rect x="300" y="139" width="560" height="11" rx="5.5" fill="#16314a"/>
+      <rect x="300" y="139" height="11" rx="5.5" fill="url(#fill)" width="0">
+        <animate attributeName="width" values="0;504" dur="1.3s" begin="0.2s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+      </rect>
+      <rect x="300" y="175" width="560" height="11" rx="5.5" fill="#16314a"/>
+      <rect x="300" y="175" height="11" rx="5.5" fill="url(#fill)" width="0">
+        <animate attributeName="width" values="0;493" dur="1.3s" begin="0.3s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+      </rect>
+      <rect x="300" y="211" width="560" height="11" rx="5.5" fill="#16314a"/>
+      <rect x="300" y="211" height="11" rx="5.5" fill="url(#fill)" width="0">
+        <animate attributeName="width" values="0;476" dur="1.3s" begin="0.4s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+      </rect>
+    </g>
+    <g font-size="12" font-weight="700" fill="#7fd0ff">
+      <text x="876" y="78">95%</text>
+      <text x="876" y="114">93%</text>
+      <text x="876" y="150">90%</text>
+      <text x="876" y="186">88%</text>
+      <text x="876" y="222">85%</text>
+    </g>
+
+    <path d="M920 30V226" stroke="#29465d"/>
+
+    <!-- trophy case -->
+    <text x="946" y="42" fill="#8fb6cf" font-size="12" font-weight="700" letter-spacing="2">&#9672; TROPHY CASE</text>
+    <g font-size="11" fill="#c7d6e2">
+      <circle cx="953" cy="73" r="3.5" fill="#ffd166"/><text x="968" y="77">2&#215; 1ST PLACE &#183; HACKATHONS</text>
+      <circle cx="953" cy="109" r="3.5" fill="#57c4ff"/><text x="968" y="113">DUOTALK ON PYPI</text>
+      <circle cx="953" cy="145" r="3.5" fill="#a9a1ff"/><text x="968" y="149">78.9% &#183; APPWORLD DEV</text>
+      <circle cx="953" cy="181" r="3.5" fill="#74e2bd"/><text x="968" y="185">2&#215; CO-FOUNDER</text>
+      <circle cx="953" cy="217" r="3.5" fill="#4ade80"/><text x="968" y="221">FIRST HIRE &#183; TIMELN</text>
+    </g>
+  </g>
+</svg>
