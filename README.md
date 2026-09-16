@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/pipeline-banner.svg?v=2" width="100%" alt="Abhyuday Patel — annotated blueprint of an LLM inference engine" />
+  <img src="./assets/pipeline-banner.svg?v=3" width="100%" alt="Abhyuday Patel — annotated blueprint of an LLM inference engine" />
 
   <p>
     <a href="https://www.linkedin.com/in/abhyudaypatel/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square" alt="LinkedIn" /></a>
@@ -86,7 +86,7 @@
 
 ## 📈 Stat sheet
 
-<img src="./assets/stat-sheet.svg?v=2" width="100%" alt="Skill meters and trophy case" />
+<img src="./assets/stat-sheet.svg?v=3" width="100%" alt="Skill meters and trophy case" />
 
 ## 🧪 Side quests
 
