@@ -22,7 +22,7 @@
 
 | | |
 | :--- | :--- |
-| ▸ **NOW** | **[Orbitrage](https://orbitrage.ai)** — Co-Founder & CTO · LLM routing, observability & evaluation · Localhost HQ Founders Program |
+| ▸ **PREV** | **[Orbitrage](https://orbitrage.ai)** — Co-Founder & CTO · LLM routing, observability & evaluation · Localhost HQ Founders Program |
 | ▸ **PREV** | **[Timeln](https://timeln.app)** — first engineering hire · Memgraph → FalkorDB migration · **[Procurv](https://www.procurvhq.com)** — co-founder |
 | ▸ **FOCUS** | vLLM/SGLang serving · model routing · KV caching · batching · agent backends · deployment |
 | ▸ **EDU** | IIIT Ranchi — Electronics & Communication Engineering · Class of 2027 |
